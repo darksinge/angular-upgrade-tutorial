@@ -6,12 +6,16 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-const core_1 = require("@angular/core");
-const platform_browser_1 = require("@angular/platform-browser");
-const static_1 = require("@angular/upgrade/static");
-let AppModule = class AppModule {
-    ngDoBootstrap() { }
-};
+var core_1 = require("@angular/core");
+var platform_browser_1 = require("@angular/platform-browser");
+var static_1 = require("@angular/upgrade/static");
+var AppModule = (function () {
+    function AppModule() {
+    }
+    AppModule.prototype.ngDoBootstrap = function () {
+    };
+    return AppModule;
+}());
 AppModule = __decorate([
     core_1.NgModule({
         imports: [
@@ -21,10 +25,10 @@ AppModule = __decorate([
     })
 ], AppModule);
 exports.AppModule = AppModule;
-const platform_browser_dynamic_1 = require("@angular/platform-browser-dynamic");
+var platform_browser_dynamic_1 = require("@angular/platform-browser-dynamic");
 platform_browser_dynamic_1.platformBrowserDynamic().bootstrapModule(AppModule)
-    .then(platformRef => {
-    const upgrade = platformRef.injector.get(static_1.UpgradeModule);
+    .then(function (platformRef) {
+    var upgrade = platformRef.injector.get(static_1.UpgradeModule);
     upgrade.bootstrap(document.body, ['app'], { strictDi: true });
 });
 //# sourceMappingURL=app.module.js.map

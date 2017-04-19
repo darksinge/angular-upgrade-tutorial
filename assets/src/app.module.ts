@@ -10,7 +10,9 @@ import { UpgradeModule } from '@angular/upgrade/static';
 })
 
 export class AppModule {
-  ngDoBootstrap() {}
+  ngDoBootstrap() {
+    
+  }
 }
 
 import {platformBrowserDynamic} from '@angular/platform-browser-dynamic';

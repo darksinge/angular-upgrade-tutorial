@@ -24,6 +24,11 @@
 // > Note: This is not required in order to lift, but it is a convenient default.
 process.chdir(__dirname);
 
+process.stdout.write("Compiling typescript files\n");
+var buffer = require('child_process').execSync("tsc -p " + require('path').resolve("./"))
+
+if (buffer.toString && buffer.toString !== "") console.log(buffer.toString());
+
 // Attempt to import `sails`.
 var sails;
 try {

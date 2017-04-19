@@ -43,6 +43,7 @@ var jsFilesToInject = [
   'src/app.js',
   'src/controllers/**/*.js',
   'src/directives/**/*.js',
+  'src/dist/**/*.js',
 
   'js/**/*.js'
 ];
