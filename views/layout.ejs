@@ -14,7 +14,7 @@
     <!--STYLES END-->
   </head>
 
-  <body ng-app="app">
+  <body ng-app="app" ng-controller="MainController as mainCtrl">
     <navbar></navbar>
     <div ng-view></div>
     <!--SCRIPTS-->
@@ -30,6 +30,7 @@
     <script src="/src/directives/NavbarDirective.js"></script>
     <script src="/src/directives/UserDirective.js"></script>
     <script src="/src/dist/app.module.js"></script>
+    <script src="/src/dist/bundle.js"></script>
     <!--SCRIPTS END-->
   </body>
 </html>

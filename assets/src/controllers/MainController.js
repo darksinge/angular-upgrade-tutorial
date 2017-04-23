@@ -6,8 +6,8 @@
 
     function MainController($scope) {
 
-        
+        $scope.title = "Test Application";
 
     }
 
-})
+})();
